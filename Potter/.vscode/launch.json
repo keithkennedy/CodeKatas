@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Potter",
+            "program": "${workspaceFolder:Potter}/.build/debug/Potter",
+            "args": [],
+            "cwd": "${workspaceFolder:Potter}",
+            "preLaunchTask": "swift: Build Debug Potter"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Release Potter",
+            "program": "${workspaceFolder:Potter}/.build/release/Potter",
+            "args": [],
+            "cwd": "${workspaceFolder:Potter}",
+            "preLaunchTask": "swift: Build Release Potter"
+        }
+    ]
+}
